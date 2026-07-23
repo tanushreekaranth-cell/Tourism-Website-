@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h2>⭐ Reviews & Ratings</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="hotels.html">Hotels</a>
+<a href="booking.html">Booking</a>
+<a href="reviews.html">Reviews</a>
+</nav>
+
+</header>
+
+<div class="form-box">
+
+<h2>Write a Review</h2>
+
+<input type="text" id="user" placeholder="Your Name">
+
+<select id="rating">
+<option value="5">⭐⭐⭐⭐⭐ (5)</option>
+<option value="4">⭐⭐⭐⭐ (4)</option>
+<option value="3">⭐⭐⭐ (3)</option>
+<option value="2">⭐⭐ (2)</option>
+<option value="1">⭐ (1)</option>
+</select>
+
+<textarea id="review" placeholder="Write your review..." rows="5"></textarea>
+
+<button onclick="saveReview()">Submit Review</button>
+
+</div>
+
+<h2 class="title">Customer Reviews</h2>
+
+<div id="reviewList"></div>
+
+<script src="review.js"></script>
+
+</body>
+</html>

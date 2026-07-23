@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h2>💳 Payment</h2>
+</header>
+
+<div class="form-box">
+
+<h2>Complete Your Payment</h2>
+
+<input type="text" id="cardName" placeholder="Card Holder Name">
+
+<input type="text" id="cardNumber" placeholder="Card Number" maxlength="16">
+
+<input type="month" id="expiry">
+
+<input type="password" id="cvv" placeholder="CVV" maxlength="3">
+
+<select id="paymentMethod">
+<option>Credit Card</option>
+<option>Debit Card</option>
+<option>UPI</option>
+<option>Net Banking</option>
+</select>
+
+<button onclick="payNow()">Pay Now</button>
+
+</div>
+
+<script src="payment.js"></script>
+
+</body>
+</html>
